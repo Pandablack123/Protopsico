@@ -16,7 +16,7 @@ namespace Capa_Negocio
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+      
         }
     }
 }
