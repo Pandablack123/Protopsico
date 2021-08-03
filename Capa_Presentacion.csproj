@@ -54,6 +54,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Verexpediente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Verexpediente.Designer.cs">
+      <DependentUpon>Verexpediente.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Pricipal.resx">
       <DependentUpon>Pricipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -65,7 +71,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Verexpediente.resx">
+      <DependentUpon>Verexpediente.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -84,6 +94,9 @@
       <Project>{d9ed8826-bf58-41a2-a998-4dc674e5f07b}</Project>
       <Name>Capa_Negocio</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emblemunreadable_93487.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

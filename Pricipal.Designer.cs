@@ -34,24 +34,25 @@ namespace Protopsico
             this.panellogo = new System.Windows.Forms.Panel();
             this.buttonExpediente = new System.Windows.Forms.Button();
             this.panelsubmenuEXPE = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.buttonVerExpe = new System.Windows.Forms.Button();
+            this.buttonCrearExp = new System.Windows.Forms.Button();
+            this.buttonBajaExpe = new System.Windows.Forms.Button();
             this.buttonConsulta = new System.Windows.Forms.Button();
             this.panelsubmenuConsulta = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.buttonIniciarConsulta = new System.Windows.Forms.Button();
+            this.buttonVerConsulta = new System.Windows.Forms.Button();
+            this.buttonNuevaConsulta = new System.Windows.Forms.Button();
             this.buttonCita = new System.Windows.Forms.Button();
             this.panelsubmenuCita = new System.Windows.Forms.Panel();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
+            this.buttonVerCitas = new System.Windows.Forms.Button();
+            this.buttonPosponerCita = new System.Windows.Forms.Button();
+            this.buttonAgendarCita = new System.Windows.Forms.Button();
             this.buttonInformes = new System.Windows.Forms.Button();
             this.panelsubmenuinfor = new System.Windows.Forms.Panel();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
+            this.buttonGenerarInformes = new System.Windows.Forms.Button();
+            this.buttonVerInformes = new System.Windows.Forms.Button();
+            this.panelcalendario = new System.Windows.Forms.Panel();
+            this.panelFormhijo = new System.Windows.Forms.Panel();
             this.Panelmenu.SuspendLayout();
             this.panelsubmenuEXPE.SuspendLayout();
             this.panelsubmenuConsulta.SuspendLayout();
@@ -104,65 +105,68 @@ namespace Protopsico
             // panelsubmenuEXPE
             // 
             this.panelsubmenuEXPE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.panelsubmenuEXPE.Controls.Add(this.button4);
-            this.panelsubmenuEXPE.Controls.Add(this.button3);
-            this.panelsubmenuEXPE.Controls.Add(this.button2);
+            this.panelsubmenuEXPE.Controls.Add(this.buttonBajaExpe);
+            this.panelsubmenuEXPE.Controls.Add(this.buttonCrearExp);
+            this.panelsubmenuEXPE.Controls.Add(this.buttonVerExpe);
             this.panelsubmenuEXPE.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelsubmenuEXPE.Location = new System.Drawing.Point(0, 100);
             this.panelsubmenuEXPE.Name = "panelsubmenuEXPE";
             this.panelsubmenuEXPE.Size = new System.Drawing.Size(124, 130);
             this.panelsubmenuEXPE.TabIndex = 3;
             // 
-            // button2
+            // buttonVerExpe
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(139)))), ((int)(((byte)(255)))));
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.Location = new System.Drawing.Point(0, 0);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(124, 40);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Ver Expediente";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = false;
+            this.buttonVerExpe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(139)))), ((int)(((byte)(255)))));
+            this.buttonVerExpe.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonVerExpe.FlatAppearance.BorderSize = 0;
+            this.buttonVerExpe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonVerExpe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonVerExpe.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttonVerExpe.Location = new System.Drawing.Point(0, 0);
+            this.buttonVerExpe.Name = "buttonVerExpe";
+            this.buttonVerExpe.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.buttonVerExpe.Size = new System.Drawing.Size(124, 40);
+            this.buttonVerExpe.TabIndex = 0;
+            this.buttonVerExpe.Text = "Ver Expediente";
+            this.buttonVerExpe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonVerExpe.UseVisualStyleBackColor = false;
+            this.buttonVerExpe.Click += new System.EventHandler(this.buttonVerExpe_Click);
             // 
-            // button3
+            // buttonCrearExp
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(139)))), ((int)(((byte)(255)))));
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button3.Location = new System.Drawing.Point(0, 40);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(124, 40);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "Crear";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = false;
+            this.buttonCrearExp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(139)))), ((int)(((byte)(255)))));
+            this.buttonCrearExp.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonCrearExp.FlatAppearance.BorderSize = 0;
+            this.buttonCrearExp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCrearExp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCrearExp.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttonCrearExp.Location = new System.Drawing.Point(0, 40);
+            this.buttonCrearExp.Name = "buttonCrearExp";
+            this.buttonCrearExp.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.buttonCrearExp.Size = new System.Drawing.Size(124, 40);
+            this.buttonCrearExp.TabIndex = 1;
+            this.buttonCrearExp.Text = "Crear";
+            this.buttonCrearExp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonCrearExp.UseVisualStyleBackColor = false;
+            this.buttonCrearExp.Click += new System.EventHandler(this.buttonCrearExp_Click);
             // 
-            // button4
+            // buttonBajaExpe
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(139)))), ((int)(((byte)(255)))));
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button4.Location = new System.Drawing.Point(0, 80);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(124, 40);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "Dar de baja";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = false;
+            this.buttonBajaExpe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(139)))), ((int)(((byte)(255)))));
+            this.buttonBajaExpe.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonBajaExpe.FlatAppearance.BorderSize = 0;
+            this.buttonBajaExpe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonBajaExpe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBajaExpe.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttonBajaExpe.Location = new System.Drawing.Point(0, 80);
+            this.buttonBajaExpe.Name = "buttonBajaExpe";
+            this.buttonBajaExpe.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.buttonBajaExpe.Size = new System.Drawing.Size(124, 40);
+            this.buttonBajaExpe.TabIndex = 2;
+            this.buttonBajaExpe.Text = "Dar de baja";
+            this.buttonBajaExpe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonBajaExpe.UseVisualStyleBackColor = false;
+            this.buttonBajaExpe.Click += new System.EventHandler(this.buttonBajaExpe_Click);
             // 
             // buttonConsulta
             // 
@@ -183,65 +187,68 @@ namespace Protopsico
             // panelsubmenuConsulta
             // 
             this.panelsubmenuConsulta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.panelsubmenuConsulta.Controls.Add(this.button5);
-            this.panelsubmenuConsulta.Controls.Add(this.button6);
-            this.panelsubmenuConsulta.Controls.Add(this.button7);
+            this.panelsubmenuConsulta.Controls.Add(this.buttonIniciarConsulta);
+            this.panelsubmenuConsulta.Controls.Add(this.buttonVerConsulta);
+            this.panelsubmenuConsulta.Controls.Add(this.buttonNuevaConsulta);
             this.panelsubmenuConsulta.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelsubmenuConsulta.Location = new System.Drawing.Point(0, 260);
             this.panelsubmenuConsulta.Name = "panelsubmenuConsulta";
             this.panelsubmenuConsulta.Size = new System.Drawing.Size(124, 130);
             this.panelsubmenuConsulta.TabIndex = 5;
             // 
-            // button5
+            // buttonIniciarConsulta
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(139)))), ((int)(((byte)(255)))));
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button5.Location = new System.Drawing.Point(0, 80);
-            this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button5.Size = new System.Drawing.Size(124, 40);
-            this.button5.TabIndex = 2;
-            this.button5.Text = "Dar de baja";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = false;
+            this.buttonIniciarConsulta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(139)))), ((int)(((byte)(255)))));
+            this.buttonIniciarConsulta.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonIniciarConsulta.FlatAppearance.BorderSize = 0;
+            this.buttonIniciarConsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonIniciarConsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonIniciarConsulta.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttonIniciarConsulta.Location = new System.Drawing.Point(0, 80);
+            this.buttonIniciarConsulta.Name = "buttonIniciarConsulta";
+            this.buttonIniciarConsulta.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.buttonIniciarConsulta.Size = new System.Drawing.Size(124, 40);
+            this.buttonIniciarConsulta.TabIndex = 2;
+            this.buttonIniciarConsulta.Text = "Iniciar consulta";
+            this.buttonIniciarConsulta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonIniciarConsulta.UseVisualStyleBackColor = false;
+            this.buttonIniciarConsulta.Click += new System.EventHandler(this.buttonIniciarConsulta_Click);
             // 
-            // button6
+            // buttonVerConsulta
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(139)))), ((int)(((byte)(255)))));
-            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button6.Location = new System.Drawing.Point(0, 40);
-            this.button6.Name = "button6";
-            this.button6.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button6.Size = new System.Drawing.Size(124, 40);
-            this.button6.TabIndex = 1;
-            this.button6.Text = "Crear";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.UseVisualStyleBackColor = false;
+            this.buttonVerConsulta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(139)))), ((int)(((byte)(255)))));
+            this.buttonVerConsulta.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonVerConsulta.FlatAppearance.BorderSize = 0;
+            this.buttonVerConsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonVerConsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonVerConsulta.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttonVerConsulta.Location = new System.Drawing.Point(0, 40);
+            this.buttonVerConsulta.Name = "buttonVerConsulta";
+            this.buttonVerConsulta.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.buttonVerConsulta.Size = new System.Drawing.Size(124, 40);
+            this.buttonVerConsulta.TabIndex = 1;
+            this.buttonVerConsulta.Text = "Ver Consulta";
+            this.buttonVerConsulta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonVerConsulta.UseVisualStyleBackColor = false;
+            this.buttonVerConsulta.Click += new System.EventHandler(this.buttonVerConsulta_Click);
             // 
-            // button7
+            // buttonNuevaConsulta
             // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(139)))), ((int)(((byte)(255)))));
-            this.button7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button7.Location = new System.Drawing.Point(0, 0);
-            this.button7.Name = "button7";
-            this.button7.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button7.Size = new System.Drawing.Size(124, 40);
-            this.button7.TabIndex = 0;
-            this.button7.Text = "Ver Expediente";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.UseVisualStyleBackColor = false;
+            this.buttonNuevaConsulta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(139)))), ((int)(((byte)(255)))));
+            this.buttonNuevaConsulta.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonNuevaConsulta.FlatAppearance.BorderSize = 0;
+            this.buttonNuevaConsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonNuevaConsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonNuevaConsulta.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttonNuevaConsulta.Location = new System.Drawing.Point(0, 0);
+            this.buttonNuevaConsulta.Name = "buttonNuevaConsulta";
+            this.buttonNuevaConsulta.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.buttonNuevaConsulta.Size = new System.Drawing.Size(124, 40);
+            this.buttonNuevaConsulta.TabIndex = 0;
+            this.buttonNuevaConsulta.Text = "Nueva Consulta";
+            this.buttonNuevaConsulta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonNuevaConsulta.UseVisualStyleBackColor = false;
+            this.buttonNuevaConsulta.Click += new System.EventHandler(this.buttonNuevaConsulta_Click);
             // 
             // buttonCita
             // 
@@ -262,65 +269,68 @@ namespace Protopsico
             // panelsubmenuCita
             // 
             this.panelsubmenuCita.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.panelsubmenuCita.Controls.Add(this.button9);
-            this.panelsubmenuCita.Controls.Add(this.button10);
-            this.panelsubmenuCita.Controls.Add(this.button11);
+            this.panelsubmenuCita.Controls.Add(this.buttonVerCitas);
+            this.panelsubmenuCita.Controls.Add(this.buttonPosponerCita);
+            this.panelsubmenuCita.Controls.Add(this.buttonAgendarCita);
             this.panelsubmenuCita.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelsubmenuCita.Location = new System.Drawing.Point(0, 420);
             this.panelsubmenuCita.Name = "panelsubmenuCita";
             this.panelsubmenuCita.Size = new System.Drawing.Size(124, 130);
             this.panelsubmenuCita.TabIndex = 7;
             // 
-            // button9
+            // buttonVerCitas
             // 
-            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(139)))), ((int)(((byte)(255)))));
-            this.button9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button9.Location = new System.Drawing.Point(0, 80);
-            this.button9.Name = "button9";
-            this.button9.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button9.Size = new System.Drawing.Size(124, 40);
-            this.button9.TabIndex = 2;
-            this.button9.Text = "Dar de baja";
-            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.UseVisualStyleBackColor = false;
+            this.buttonVerCitas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(139)))), ((int)(((byte)(255)))));
+            this.buttonVerCitas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonVerCitas.FlatAppearance.BorderSize = 0;
+            this.buttonVerCitas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonVerCitas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonVerCitas.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttonVerCitas.Location = new System.Drawing.Point(0, 80);
+            this.buttonVerCitas.Name = "buttonVerCitas";
+            this.buttonVerCitas.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.buttonVerCitas.Size = new System.Drawing.Size(124, 40);
+            this.buttonVerCitas.TabIndex = 2;
+            this.buttonVerCitas.Text = "Ver Citas";
+            this.buttonVerCitas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonVerCitas.UseVisualStyleBackColor = false;
+            this.buttonVerCitas.Click += new System.EventHandler(this.buttonVerCitas_Click);
             // 
-            // button10
+            // buttonPosponerCita
             // 
-            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(139)))), ((int)(((byte)(255)))));
-            this.button10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button10.Location = new System.Drawing.Point(0, 40);
-            this.button10.Name = "button10";
-            this.button10.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button10.Size = new System.Drawing.Size(124, 40);
-            this.button10.TabIndex = 1;
-            this.button10.Text = "Crear";
-            this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.UseVisualStyleBackColor = false;
+            this.buttonPosponerCita.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(139)))), ((int)(((byte)(255)))));
+            this.buttonPosponerCita.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonPosponerCita.FlatAppearance.BorderSize = 0;
+            this.buttonPosponerCita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPosponerCita.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPosponerCita.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttonPosponerCita.Location = new System.Drawing.Point(0, 40);
+            this.buttonPosponerCita.Name = "buttonPosponerCita";
+            this.buttonPosponerCita.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.buttonPosponerCita.Size = new System.Drawing.Size(124, 40);
+            this.buttonPosponerCita.TabIndex = 1;
+            this.buttonPosponerCita.Text = "Posponer Cita";
+            this.buttonPosponerCita.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonPosponerCita.UseVisualStyleBackColor = false;
+            this.buttonPosponerCita.Click += new System.EventHandler(this.buttonPosponerCita_Click);
             // 
-            // button11
+            // buttonAgendarCita
             // 
-            this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(139)))), ((int)(((byte)(255)))));
-            this.button11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button11.Location = new System.Drawing.Point(0, 0);
-            this.button11.Name = "button11";
-            this.button11.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button11.Size = new System.Drawing.Size(124, 40);
-            this.button11.TabIndex = 0;
-            this.button11.Text = "Ver Expediente";
-            this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button11.UseVisualStyleBackColor = false;
+            this.buttonAgendarCita.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(139)))), ((int)(((byte)(255)))));
+            this.buttonAgendarCita.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonAgendarCita.FlatAppearance.BorderSize = 0;
+            this.buttonAgendarCita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAgendarCita.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAgendarCita.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttonAgendarCita.Location = new System.Drawing.Point(0, 0);
+            this.buttonAgendarCita.Name = "buttonAgendarCita";
+            this.buttonAgendarCita.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.buttonAgendarCita.Size = new System.Drawing.Size(124, 40);
+            this.buttonAgendarCita.TabIndex = 0;
+            this.buttonAgendarCita.Text = "Agendar Cita";
+            this.buttonAgendarCita.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonAgendarCita.UseVisualStyleBackColor = false;
+            this.buttonAgendarCita.Click += new System.EventHandler(this.buttonAgendarCita_Click);
             // 
             // buttonInformes
             // 
@@ -341,72 +351,75 @@ namespace Protopsico
             // panelsubmenuinfor
             // 
             this.panelsubmenuinfor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.panelsubmenuinfor.Controls.Add(this.button13);
-            this.panelsubmenuinfor.Controls.Add(this.button14);
-            this.panelsubmenuinfor.Controls.Add(this.button15);
+            this.panelsubmenuinfor.Controls.Add(this.buttonGenerarInformes);
+            this.panelsubmenuinfor.Controls.Add(this.buttonVerInformes);
             this.panelsubmenuinfor.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelsubmenuinfor.Location = new System.Drawing.Point(0, 580);
             this.panelsubmenuinfor.Name = "panelsubmenuinfor";
             this.panelsubmenuinfor.Size = new System.Drawing.Size(124, 130);
             this.panelsubmenuinfor.TabIndex = 9;
             // 
-            // button13
+            // buttonGenerarInformes
             // 
-            this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(139)))), ((int)(((byte)(255)))));
-            this.button13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button13.Location = new System.Drawing.Point(0, 80);
-            this.button13.Name = "button13";
-            this.button13.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button13.Size = new System.Drawing.Size(124, 40);
-            this.button13.TabIndex = 2;
-            this.button13.Text = "Dar de baja";
-            this.button13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button13.UseVisualStyleBackColor = false;
+            this.buttonGenerarInformes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(139)))), ((int)(((byte)(255)))));
+            this.buttonGenerarInformes.FlatAppearance.BorderSize = 0;
+            this.buttonGenerarInformes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonGenerarInformes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonGenerarInformes.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttonGenerarInformes.Location = new System.Drawing.Point(0, 62);
+            this.buttonGenerarInformes.Name = "buttonGenerarInformes";
+            this.buttonGenerarInformes.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.buttonGenerarInformes.Size = new System.Drawing.Size(124, 40);
+            this.buttonGenerarInformes.TabIndex = 1;
+            this.buttonGenerarInformes.Text = "Generar informes";
+            this.buttonGenerarInformes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonGenerarInformes.UseVisualStyleBackColor = false;
+            this.buttonGenerarInformes.Click += new System.EventHandler(this.buttonGenerarInformes_Click);
             // 
-            // button14
+            // buttonVerInformes
             // 
-            this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(139)))), ((int)(((byte)(255)))));
-            this.button14.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button14.FlatAppearance.BorderSize = 0;
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button14.Location = new System.Drawing.Point(0, 40);
-            this.button14.Name = "button14";
-            this.button14.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button14.Size = new System.Drawing.Size(124, 40);
-            this.button14.TabIndex = 1;
-            this.button14.Text = "Crear";
-            this.button14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button14.UseVisualStyleBackColor = false;
+            this.buttonVerInformes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(139)))), ((int)(((byte)(255)))));
+            this.buttonVerInformes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonVerInformes.FlatAppearance.BorderSize = 0;
+            this.buttonVerInformes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonVerInformes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonVerInformes.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttonVerInformes.Location = new System.Drawing.Point(0, 0);
+            this.buttonVerInformes.Name = "buttonVerInformes";
+            this.buttonVerInformes.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.buttonVerInformes.Size = new System.Drawing.Size(124, 40);
+            this.buttonVerInformes.TabIndex = 0;
+            this.buttonVerInformes.Text = "Ver Informes";
+            this.buttonVerInformes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonVerInformes.UseVisualStyleBackColor = false;
+            this.buttonVerInformes.Click += new System.EventHandler(this.buttonVerInformes_Click);
             // 
-            // button15
+            // panelcalendario
             // 
-            this.button15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(139)))), ((int)(((byte)(255)))));
-            this.button15.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button15.FlatAppearance.BorderSize = 0;
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button15.Location = new System.Drawing.Point(0, 0);
-            this.button15.Name = "button15";
-            this.button15.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button15.Size = new System.Drawing.Size(124, 40);
-            this.button15.TabIndex = 0;
-            this.button15.Text = "Ver Expediente";
-            this.button15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button15.UseVisualStyleBackColor = false;
+            this.panelcalendario.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panelcalendario.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelcalendario.Location = new System.Drawing.Point(124, 611);
+            this.panelcalendario.Name = "panelcalendario";
+            this.panelcalendario.Size = new System.Drawing.Size(608, 138);
+            this.panelcalendario.TabIndex = 1;
+            // 
+            // panelFormhijo
+            // 
+            this.panelFormhijo.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panelFormhijo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelFormhijo.Location = new System.Drawing.Point(124, 0);
+            this.panelFormhijo.Name = "panelFormhijo";
+            this.panelFormhijo.Size = new System.Drawing.Size(608, 611);
+            this.panelFormhijo.TabIndex = 2;
             // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.ClientSize = new System.Drawing.Size(687, 749);
+            this.ClientSize = new System.Drawing.Size(732, 749);
+            this.Controls.Add(this.panelFormhijo);
+            this.Controls.Add(this.panelcalendario);
             this.Controls.Add(this.Panelmenu);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -427,26 +440,27 @@ namespace Protopsico
 
         private System.Windows.Forms.Panel Panelmenu;
         private System.Windows.Forms.Panel panelsubmenuEXPE;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonBajaExpe;
+        private System.Windows.Forms.Button buttonCrearExp;
+        private System.Windows.Forms.Button buttonVerExpe;
         private System.Windows.Forms.Button buttonExpediente;
         private System.Windows.Forms.Panel panellogo;
         private System.Windows.Forms.Panel panelsubmenuConsulta;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button buttonIniciarConsulta;
+        private System.Windows.Forms.Button buttonVerConsulta;
+        private System.Windows.Forms.Button buttonNuevaConsulta;
         private System.Windows.Forms.Button buttonConsulta;
         private System.Windows.Forms.Panel panelsubmenuCita;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button buttonVerCitas;
+        private System.Windows.Forms.Button buttonPosponerCita;
+        private System.Windows.Forms.Button buttonAgendarCita;
         private System.Windows.Forms.Button buttonCita;
         private System.Windows.Forms.Panel panelsubmenuinfor;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button buttonGenerarInformes;
+        private System.Windows.Forms.Button buttonVerInformes;
         private System.Windows.Forms.Button buttonInformes;
+        private System.Windows.Forms.Panel panelcalendario;
+        private System.Windows.Forms.Panel panelFormhijo;
     }
 }
 

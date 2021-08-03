@@ -79,6 +79,81 @@ namespace Protopsico
         {
             mostrarsubmenu(panelsubmenuinfor);
         }
+
+        private void buttonVerExpe_Click(object sender, EventArgs e)
+        {
+            abrirForm(new Verexpediente());
+            ocultarsubmenu();
+            
+        }
+
+        private void buttonCrearExp_Click(object sender, EventArgs e)
+        {
+            ocultarsubmenu();
+        }
+
+        private void buttonBajaExpe_Click(object sender, EventArgs e)
+        {
+            ocultarsubmenu();
+        }
+
+        private void buttonNuevaConsulta_Click(object sender, EventArgs e)
+        {
+            ocultarsubmenu();
+        }
+
+        private void buttonVerConsulta_Click(object sender, EventArgs e)
+        {
+            ocultarsubmenu();
+        }
+
+        private void buttonIniciarConsulta_Click(object sender, EventArgs e)
+        {
+            ocultarsubmenu();
+        }
+
+        private void buttonAgendarCita_Click(object sender, EventArgs e)
+        {
+            ocultarsubmenu();
+        }
+
+        private void buttonPosponerCita_Click(object sender, EventArgs e)
+        {
+            ocultarsubmenu();
+        }
+
+        private void buttonVerCitas_Click(object sender, EventArgs e)
+        {
+            ocultarsubmenu();
+        }
+
+        private void buttonVerInformes_Click(object sender, EventArgs e)
+        {
+            ocultarsubmenu();
+        }
+
+        private void buttonGenerarInformes_Click(object sender, EventArgs e)
+        {
+            ocultarsubmenu();
+        }
+
+        private Form fomractive = null;
+        private void abrirForm(Form formhijo)
+        {
+            if (fomractive != null)
+            {
+                fomractive.Close();  
+            }
+            fomractive = formhijo;
+            formhijo.TopLevel = false;
+            formhijo.FormBorderStyle = FormBorderStyle.None;
+            formhijo.Dock = DockStyle.Fill;
+            panelFormhijo.Controls.Add(formhijo);
+            panelFormhijo.Tag = formhijo;
+            formhijo.BringToFront();
+            formhijo.Show();
+        }
+
     }
 
 }
