@@ -69,5 +69,27 @@ namespace Protopsico.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap schizophrenia_health_mental_depression_psychology_disorder_person_stress_fear_icon_133501 {
+            get {
+                object obj = ResourceManager.GetObject("schizophrenia_health_mental_depression_psychology_disorder_person_stress_fear_ico" +
+                        "n_133501", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap schizophrenia_health_mental_depression_psychology_disorder_person_stress_fear_icon_133501__1_ {
+            get {
+                object obj = ResourceManager.GetObject("schizophrenia_health_mental_depression_psychology_disorder_person_stress_fear_ico" +
+                        "n_133501 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

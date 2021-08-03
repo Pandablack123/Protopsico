@@ -98,5 +98,11 @@
   <ItemGroup>
     <None Include="Resources\emblemunreadable_93487.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schizophrenia_health_mental_depression_psychology_disorder_person_stress_fear_icon_133501.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schizophrenia_health_mental_depression_psychology_disorder_person_stress_fear_icon_133501 %281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

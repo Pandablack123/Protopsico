@@ -31,7 +31,6 @@ namespace Protopsico
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             this.Panelmenu = new System.Windows.Forms.Panel();
-            this.panellogo = new System.Windows.Forms.Panel();
             this.buttonExpediente = new System.Windows.Forms.Button();
             this.panelsubmenuEXPE = new System.Windows.Forms.Panel();
             this.buttonVerExpe = new System.Windows.Forms.Button();
@@ -53,6 +52,7 @@ namespace Protopsico
             this.buttonVerInformes = new System.Windows.Forms.Button();
             this.panelcalendario = new System.Windows.Forms.Panel();
             this.panelFormhijo = new System.Windows.Forms.Panel();
+            this.panellogo = new System.Windows.Forms.Panel();
             this.Panelmenu.SuspendLayout();
             this.panelsubmenuEXPE.SuspendLayout();
             this.panelsubmenuConsulta.SuspendLayout();
@@ -77,14 +77,6 @@ namespace Protopsico
             this.Panelmenu.Name = "Panelmenu";
             this.Panelmenu.Size = new System.Drawing.Size(124, 749);
             this.Panelmenu.TabIndex = 0;
-            // 
-            // panellogo
-            // 
-            this.panellogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panellogo.Location = new System.Drawing.Point(0, 0);
-            this.panellogo.Name = "panellogo";
-            this.panellogo.Size = new System.Drawing.Size(124, 70);
-            this.panellogo.TabIndex = 1;
             // 
             // buttonExpediente
             // 
@@ -411,6 +403,16 @@ namespace Protopsico
             this.panelFormhijo.Name = "panelFormhijo";
             this.panelFormhijo.Size = new System.Drawing.Size(608, 611);
             this.panelFormhijo.TabIndex = 2;
+            // 
+            // panellogo
+            // 
+            this.panellogo.BackgroundImage = global::Protopsico.Properties.Resources.schizophrenia_health_mental_depression_psychology_disorder_person_stress_fear_icon_133501__1_;
+            this.panellogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panellogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panellogo.Location = new System.Drawing.Point(0, 0);
+            this.panellogo.Name = "panellogo";
+            this.panellogo.Size = new System.Drawing.Size(124, 70);
+            this.panellogo.TabIndex = 1;
             // 
             // Principal
             // 
